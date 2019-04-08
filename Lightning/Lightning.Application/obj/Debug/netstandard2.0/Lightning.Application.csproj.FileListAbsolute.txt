@@ -1,0 +1,16 @@
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CoreCompileInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfoInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojResolveAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.pdb

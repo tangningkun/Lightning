@@ -1,0 +1,17 @@
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csprojAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csproj.CoreCompileInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.AssemblyInfoInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Domain.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Domain.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csproj.CopyComplete
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csprojResolveAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.pdb
