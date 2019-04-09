@@ -14,3 +14,12 @@ G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Code\Lightni
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.AssemblyInfo.cs
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.dll
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\bin\Debug\netstandard2.0\Lightning.Core.deps.json
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\bin\Debug\netstandard2.0\Lightning.Core.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\bin\Debug\netstandard2.0\Lightning.Core.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.csprojAssemblyReference.cache
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.csproj.CoreCompileInputs.cache
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.AssemblyInfoInputs.cache
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.AssemblyInfo.cs
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Code\Lightning.Core\obj\Debug\netstandard2.0\Lightning.Core.pdb

@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "f:\\1-A工作\\工作\\ASP.NET_CORE\\Lightning\\Lightning\\Lightning\\Lightning.Web\\Lightning.Web.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lightning.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Lightning.WebApi.Controllers.UserInfoController">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="M:Lightning.WebApi.Controllers.UserInfoController.AAA">
+            <summary>
+            AAA
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lightning.WebApi.Controllers.UserInfoController.BBB">
+            <summary>
+            BBB
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

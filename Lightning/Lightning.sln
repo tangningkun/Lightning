@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.Web", "Lightning.Web\Lightning.Web\Lightning.Web.csproj", "{6C634BE3-5643-48A4-AF29-805CC81C2F3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lightning.Core", "Lightning.Code\Lightning.Core\Lightning.Core.csproj", "{9B58B985-62C3-4654-BBCB-9F9E640257DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.Core", "Lightning.Code\Lightning.Core\Lightning.Core.csproj", "{9B58B985-62C3-4654-BBCB-9F9E640257DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lightning.Application", "Lightning.Application\Lightning.Application.csproj", "{30A9B49B-9FFC-4C15-B878-49F8991CFE35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.Application", "Lightning.Application\Lightning.Application.csproj", "{30A9B49B-9FFC-4C15-B878-49F8991CFE35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lightning.EntityFramework", "Lightning.EntityFramework\Lightning.EntityFramework.csproj", "{D6F99ADC-3D7F-4DCE-9B84-A731CF52959B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.EntityFramework", "Lightning.EntityFramework\Lightning.EntityFramework.csproj", "{D6F99ADC-3D7F-4DCE-9B84-A731CF52959B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lightning.Domain", "Lightning.Domain\Lightning.Domain.csproj", "{624C8C4B-764C-48FA-A440-12F421271C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.Domain", "Lightning.Domain\Lightning.Domain.csproj", "{624C8C4B-764C-48FA-A440-12F421271C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lightning.Web", "Lightning.Web\Lightning.Web.csproj", "{07F72E38-651E-4837-BAA8-31F140C22975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lightning.WebApi", "Lightning.WebApi\Lightning.WebApi.csproj", "{E2F79DBC-11DA-4132-8589-B42B950306B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6C634BE3-5643-48A4-AF29-805CC81C2F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C634BE3-5643-48A4-AF29-805CC81C2F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C634BE3-5643-48A4-AF29-805CC81C2F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C634BE3-5643-48A4-AF29-805CC81C2F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B58B985-62C3-4654-BBCB-9F9E640257DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B58B985-62C3-4654-BBCB-9F9E640257DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B58B985-62C3-4654-BBCB-9F9E640257DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,14 @@ Global
 		{624C8C4B-764C-48FA-A440-12F421271C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{624C8C4B-764C-48FA-A440-12F421271C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{624C8C4B-764C-48FA-A440-12F421271C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F72E38-651E-4837-BAA8-31F140C22975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F72E38-651E-4837-BAA8-31F140C22975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F72E38-651E-4837-BAA8-31F140C22975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F72E38-651E-4837-BAA8-31F140C22975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F79DBC-11DA-4132-8589-B42B950306B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F79DBC-11DA-4132-8589-B42B950306B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F79DBC-11DA-4132-8589-B42B950306B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F79DBC-11DA-4132-8589-B42B950306B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
