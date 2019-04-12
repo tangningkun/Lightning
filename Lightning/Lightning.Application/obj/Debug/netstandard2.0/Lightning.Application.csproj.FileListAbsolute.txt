@@ -17,9 +17,16 @@ G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.deps.json
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.pdb
-F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojAssemblyReference.cache
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CoreCompileInputs.cache
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfoInputs.cache
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfo.cs
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Core.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Domain.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.EntityFramework.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Core.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Domain.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.EntityFramework.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojAssemblyReference.cache
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CopyComplete

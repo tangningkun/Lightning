@@ -4,4 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lightning.Code\Lightning.Core\Lightning.Core.csproj" />
+    <ProjectReference Include="..\Lightning.Domain\Lightning.Domain.csproj" />
+    <ProjectReference Include="..\Lightning.EntityFramework\Lightning.EntityFramework.csproj" />
+  </ItemGroup>
+
 </Project>

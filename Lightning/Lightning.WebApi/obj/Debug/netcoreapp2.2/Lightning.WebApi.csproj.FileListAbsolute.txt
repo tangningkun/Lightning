@@ -18,3 +18,5 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\netcoreapp2.2\Lightning.WebApi.xml
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\netcoreapp2.2\Lightning.Core.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\netcoreapp2.2\Lightning.Core.pdb

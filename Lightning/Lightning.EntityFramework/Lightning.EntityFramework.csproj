@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Lightning.Code\Lightning.Core\Lightning.Core.csproj" />
     <ProjectReference Include="..\Lightning.Domain\Lightning.Domain.csproj" />
   </ItemGroup>
 

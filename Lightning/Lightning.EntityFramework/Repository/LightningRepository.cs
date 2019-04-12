@@ -1,4 +1,5 @@
-﻿using Lightning.Domain;
+﻿using Lightning.Core.Dependency;
+using Lightning.Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
