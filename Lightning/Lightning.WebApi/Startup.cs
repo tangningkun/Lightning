@@ -25,7 +25,7 @@ namespace Lightning.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<LightningDbContext>(d => d.UseMySQL(Configuration.GetConnectionString("Default")));
+            services.AddDbContext<LightningDbContext>(d => d.UseMySql(Configuration.GetConnectionString("Default")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
             {

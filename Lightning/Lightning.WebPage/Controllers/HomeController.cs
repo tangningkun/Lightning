@@ -15,13 +15,16 @@ namespace Lightning.WebPage.Controllers
     {
         private readonly IUserAppService _userAppService;
         private readonly IConfiguration _configuration;
-        public HomeController(IUserAppService userAppService, IConfiguration configuration)
+        private readonly AppConfigurtaionServices _appConfigurtaionServices;
+        public HomeController(IUserAppService userAppService, IConfiguration configuration,AppConfigurtaionServices appConfigurtaionServices)
         {
             _userAppService = userAppService;
             _configuration = configuration;
+            _appConfigurtaionServices = appConfigurtaionServices;
         }
         public IActionResult Index()
         {
+            var name1 = _appConfigurtaionServices.AppConfigurtaionValue("Appsettings:name");
             var name = _configuration["Appsettings:name"].ToString();
             return View();
         }

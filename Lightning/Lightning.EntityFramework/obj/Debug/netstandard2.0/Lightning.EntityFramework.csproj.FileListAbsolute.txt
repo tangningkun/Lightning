@@ -18,7 +18,9 @@ G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.EntityFramew
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.deps.json
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.EntityFramework.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Core.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Domain.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Core.pdb
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Domain.pdb
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csprojAssemblyReference.cache
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csproj.CoreCompileInputs.cache
@@ -27,5 +29,3 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityF
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.csproj.CopyComplete
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\obj\Debug\netstandard2.0\Lightning.EntityFramework.pdb
-F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Core.dll
-F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.EntityFramework\bin\Debug\netstandard2.0\Lightning.Core.pdb

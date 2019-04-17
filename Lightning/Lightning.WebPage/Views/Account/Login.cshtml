@@ -1,0 +1,61 @@
+﻿@using Lightning.WebPage.Application;
+@inject AppConfigurtaionServices appConfigurtaionServices
+
+@{
+    var title = appConfigurtaionServices.AppConfigurtaionValue("Appsettings:title");
+    ViewBag.Title = title + "-用户登录";
+    ViewBag.JsPath = "app/account/login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<div class="row" style="margin:0 auto;text-align:center;">
+    <div class="col-sm-8 col-sm-offset-2 text">
+        <h1><strong>@title</strong> Login Form</h1>
+        <div class="description">
+            <p>
+                This is a free responsive login form made with Bootstrap.Thank you very much for your use.
+                <!-- Download it on <a href="#"><strong>AZMIND</strong></a>, customize and use it as you like! -->
+            </p>
+            <p>
+                这是一个使用Bootstrap制作的免费响应式登录表单。非常感谢您的使用。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin:0 auto;text-align:center;">
+    <div class="col-sm-6 col-sm-offset-3 form-box">
+        <div class="form-top">
+            <div class="form-top-left">
+                <h4>Login to our site/登录我们的网站</h4>
+                <p>Enter your username and password to log on/输入您的用户名和密码登录:</p>
+            </div>
+            <div class="form-top-right">
+                <i class="fa fa-key"></i>
+            </div>
+        </div>
+        <div class="form-bottom">
+            <!-- <form role="form" method="post" class="login-form" id="login-form"> -->
+            <div class="form-group">
+                <!--  <label class="sr-only" for="UserName">登录名:</label> -->
+                <input type="text" name="UserName" placeholder="用户名  |  Username" class="form-username form-control" id="form-username">
+            </div>
+            <div class="form-group">
+                <!-- <label class="sr-only" for="Password">密码:</label> -->
+                <input type="password" name="Password" placeholder="密码  |  Password" class="form-password form-control" id="form-password">
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-6"><button type="submit" class="btn">登 录</button></div>
+                <div class="col-sm-6"><button type="submit" href="~/account/register" class="btn">注册</button></div>
+            </div> -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <button type="submit" class="btn layui-btn layui-btn-fluid"  style="display:block;margin:0 auto" id="btn-login">Sign in|登 录</button>
+                    </div>
+                </div>
+            </div>
+            <a href="~/account/register" class="btn"><h3>注册</h3></a>
+            <!-- </form> -->
+        </div>
+    </div>
+</div>
+

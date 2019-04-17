@@ -14,13 +14,13 @@ namespace Lightning.EntityFramework.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
+                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Lightning.Domain.Entities.Department", b =>
                 {
-                    b.Property<byte[]>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("Code");
 
@@ -28,19 +28,15 @@ namespace Lightning.EntityFramework.Migrations
 
                     b.Property<DateTime?>("CreateTime");
 
-                    b.Property<byte[]>("CreateUserId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("CreateUserId");
 
-                    b.Property<int>("IsDeleted");
+                    b.Property<bool>("IsDeleted");
 
                     b.Property<string>("Manager");
 
                     b.Property<string>("Name");
 
-                    b.Property<byte[]>("ParentId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("ParentId");
 
                     b.Property<string>("Remarks");
 
@@ -51,9 +47,8 @@ namespace Lightning.EntityFramework.Migrations
 
             modelBuilder.Entity("Lightning.Domain.Entities.Menu", b =>
                 {
-                    b.Property<byte[]>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("Code");
 
@@ -63,9 +58,7 @@ namespace Lightning.EntityFramework.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<byte[]>("ParentId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("ParentId");
 
                     b.Property<string>("Remarks");
 
@@ -82,17 +75,14 @@ namespace Lightning.EntityFramework.Migrations
 
             modelBuilder.Entity("Lightning.Domain.Entities.Role", b =>
                 {
-                    b.Property<byte[]>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("Code");
 
                     b.Property<DateTime?>("CreateTime");
 
-                    b.Property<byte[]>("CreateUserId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("CreateUserId");
 
                     b.Property<string>("Name");
 
@@ -105,11 +95,9 @@ namespace Lightning.EntityFramework.Migrations
 
             modelBuilder.Entity("Lightning.Domain.Entities.RoleMenu", b =>
                 {
-                    b.Property<byte[]>("RoleId")
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("RoleId");
 
-                    b.Property<byte[]>("MenuId")
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("MenuId");
 
                     b.HasKey("RoleId", "MenuId");
 
@@ -120,23 +108,18 @@ namespace Lightning.EntityFramework.Migrations
 
             modelBuilder.Entity("Lightning.Domain.Entities.User", b =>
                 {
-                    b.Property<byte[]>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<DateTime?>("CreateTime");
 
-                    b.Property<byte[]>("CreateUserId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("CreateUserId");
 
-                    b.Property<byte[]>("DepartmentId")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("DepartmentId");
 
                     b.Property<string>("EMail");
 
-                    b.Property<int>("IsDeleted");
+                    b.Property<bool>("IsDeleted");
 
                     b.Property<DateTime>("LastLoginTime");
 
@@ -161,11 +144,9 @@ namespace Lightning.EntityFramework.Migrations
 
             modelBuilder.Entity("Lightning.Domain.Entities.UserRole", b =>
                 {
-                    b.Property<byte[]>("UserId")
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("UserId");
 
-                    b.Property<byte[]>("RoleId")
-                        .HasConversion(new ValueConverter<byte[], byte[]>(v => default(byte[]), v => default(byte[]), new ConverterMappingHints(size: 16)));
+                    b.Property<Guid>("RoleId");
 
                     b.HasKey("UserId", "RoleId");
 

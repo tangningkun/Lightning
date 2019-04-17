@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lightning.Domain.Entities
 {
@@ -6,7 +7,6 @@ namespace Lightning.Domain.Entities
     {
         public Guid RoleId { get; set; }
         public Role Role { get; set; }
-
         public Guid MenuId { get; set; }
         public Menu Menu { get; set; }
     }

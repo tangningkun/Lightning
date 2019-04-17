@@ -1,7 +1,7 @@
-﻿using Abp.AutoMapper;
-using Lightning.Application.AppServices;
+﻿using Lightning.Application.AppServices;
 using Lightning.Application.AppServices.dto;
 using Lightning.Application.Users.dto;
+using Lightning.Core.AutoMapper;
 using Lightning.Core.Encryption;
 using Lightning.Domain.Entities;
 using Lightning.EntityFramework.Repositories.UserRepositories;
@@ -21,6 +21,11 @@ namespace Lightning.Application.Users
             _userRepository = userRepository;
         }
 
+        /// <summary>
+        /// 用户登录
+        /// </summary>
+        /// <param name="dto">登录信息</param>
+        /// <returns></returns>
         public async Task<MessageDto<UserDto>> CheckLoginUserInfo(LoginUserDto dto)
         {
             try
@@ -44,7 +49,7 @@ namespace Lightning.Application.Users
                         code = 200,
                         message = "登录成功!",
                         result = "Success",
-                        data = query.MapTo<UserDto>()
+                        data = query.MapTo<User, UserDto>()
                     };
                 }
                 return new MessageDto<UserDto>
@@ -65,9 +70,51 @@ namespace Lightning.Application.Users
             }
         }
 
+        /// <summary>
+        /// 注册用户
+        /// </summary>
+        /// <param name="dto">注册用户信息</param>
+        /// <returns></returns>
         public async Task<MessageDto> RegisterUserInfo(RegisterUserDto dto)
         {
-            throw new NotImplementedException();
+            dto.Password = Encryptor.Md5Hash(dto.Password.Trim());
+            var entity = new User
+            {
+                UserName = dto.UserName,
+                Password = dto.Password,
+                Id = Guid.NewGuid(),
+                CreateTime = DateTime.Now,
+                DepartmentId= Guid.NewGuid(),
+                IsDeleted = true
+            };
+            try
+            {
+                var count = await _userRepository.CountAsync(d => d.UserName == entity.UserName);
+                if (count != 0) return new MessageDto
+                {
+                    code = 201,
+                    message = "该用户名已存在，请从新输入!",
+                    result = "Fail"
+                };
+                await _userRepository.InsertAsync(entity);
+                var result = new MessageDto
+                {
+                    code = 200,
+                    message = "注册用户成功!",
+                    result = "Success"
+                };
+                return result;
+            }
+            catch (Exception e)
+            {
+                var result = new MessageDto
+                {
+                    code = 202,
+                    message = e.Message.ToString(),
+                    result = "Fail"
+                };
+                return result;
+            }
         }
     }
 }

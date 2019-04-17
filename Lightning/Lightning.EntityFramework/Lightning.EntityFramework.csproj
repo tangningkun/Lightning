@@ -5,8 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.15" />
-    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.15" />
+    <Compile Remove="Migrations\20190417024456_Initial.cs" />
+    <Compile Remove="Migrations\20190417024655_Initial.cs" />
+    <Compile Remove="Migrations\20190417024821_Initial.cs" />
+    <Compile Remove="Migrations\20190417031122_Initial.cs" />
+    <Compile Remove="Migrations\20190417053918_Initial.cs" />
+    <Compile Remove="Migrations\20190417060620_Initial.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Lightning.Domain.Entities
 {
     public class User : Entity
     {
+        //[MaxLength(36)]
+        //public Guid UserId { get; set; }
         /// <summary>
         /// 用户名
         /// </summary>
@@ -59,7 +62,7 @@ namespace Lightning.Domain.Entities
         /// <summary>
         /// 是否已删除
         /// </summary>
-        public int IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
 
         /// <summary>
         /// 所属部门实体

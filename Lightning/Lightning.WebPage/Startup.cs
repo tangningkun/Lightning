@@ -5,8 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Lightning.Application.AppServices;
 using Lightning.Application.Users;
+using Lightning.Core.AutoMapper;
 using Lightning.EntityFramework;
+using Lightning.EntityFramework.Migrations.SeedData;
 using Lightning.EntityFramework.Repositories.UserRepositories;
+using Lightning.WebPage.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,18 +41,25 @@ namespace Lightning.WebPage
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LightningDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
+            services.AddDbContext<LightningDbContext>(options => options.UseMySql(Configuration.GetConnectionString("Default")));
             /*services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });*/
+            /** config配置文件注入 */
+            services.AddTransient<AppConfigurtaionServices>();
+            /** 服务，仓储的注入 */
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserAppService, UserAppService>();
+            
             services.AddMvc();
             //Session服务
             services.AddSession();
+
+            /** AutoMapper的配置初始化 */
+            AutoMapperRegister();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,8 +91,17 @@ namespace Lightning.WebPage
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=account}/{action=Login}");
             });
+            //DefaultSettingsCreator.Initialize(app.ApplicationServices); //初始化数据
+        }
+
+        /// <summary>
+        /// AutoMapper的配置初始化
+        /// </summary>
+        private void AutoMapperRegister()
+        {
+            new AutoMapperStartupTask().Execute();
         }
     }
 }

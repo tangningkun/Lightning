@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Lightning.Domain
@@ -13,6 +14,7 @@ namespace Lightning.Domain
         /// <summary>
         /// 主键
         /// </summary>
+        //[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public virtual TPrimaryKey Id { get; set; }
     }
 

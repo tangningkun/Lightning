@@ -22,4 +22,7 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\obj\Debug\netstandard2.0\Lightning.Domain.AssemblyInfo.cs
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\obj\Debug\netstandard2.0\Lightning.Domain.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\obj\Debug\netstandard2.0\Lightning.Domain.pdb
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\obj\Debug\netstandard2.0\Lightning.Domain.csproj.CopyComplete
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Domain\obj\Debug\netstandard2.0\Lightning.Domain.csprojAssemblyReference.cache

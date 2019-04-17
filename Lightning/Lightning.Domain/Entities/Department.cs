@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lightning.Domain.Entities
 {
@@ -8,6 +9,7 @@ namespace Lightning.Domain.Entities
     /// </summary>
     public class Department : Entity
     {
+        
         /// <summary>
         /// 部门名称
         /// </summary>
@@ -46,7 +48,7 @@ namespace Lightning.Domain.Entities
         /// <summary>
         /// 是否已删除
         /// </summary>
-        public int IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
 
         /// <summary>
         /// 包含用户

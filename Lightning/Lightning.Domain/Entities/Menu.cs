@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Lightning.Domain.Entities
@@ -9,6 +10,8 @@ namespace Lightning.Domain.Entities
     /// </summary>
     public class Menu : Entity
     {
+        //[MaxLength(36)]
+        //public Guid MenuId { get;set;}
         /// <summary>
         /// 父级ID
         /// </summary>
