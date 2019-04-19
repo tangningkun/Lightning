@@ -1,12 +1,12 @@
 /* jshint esversion: 6 */
-define(['main', 'current', 'lay!layer'], function(main, current) {
+define(['main', 'current', 'md5', 'lay!layer'], function(main, current, md5) {
   var layer = layui.layer;
   var module = {
     _init: function(data) {
-      console.log(data);
       if (module._checkform(data)) {
         return;
       }
+      data.Password = md5(data.Password);
       module._registereduser(data);
     },
     _checkform: function(data) {

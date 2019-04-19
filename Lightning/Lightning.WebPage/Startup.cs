@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Lightning.Application.AppServices;
+using Lightning.Application.Departments;
 using Lightning.Application.Users;
 using Lightning.Core.AutoMapper;
 using Lightning.EntityFramework;
 using Lightning.EntityFramework.Migrations.SeedData;
+using Lightning.EntityFramework.Repositories.DepartmentRepositiories;
 using Lightning.EntityFramework.Repositories.UserRepositories;
 using Lightning.WebPage.Application;
 using Microsoft.AspNetCore.Builder;
@@ -53,7 +54,8 @@ namespace Lightning.WebPage
             /** 服务，仓储的注入 */
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserAppService, UserAppService>();
-            
+            services.AddScoped<IDepartmentRepositiory, DepartmentRepositiory>();
+            services.AddScoped<IDepartmentAppService, DepartmentAppService>();
             services.AddMvc();
             //Session服务
             services.AddSession();

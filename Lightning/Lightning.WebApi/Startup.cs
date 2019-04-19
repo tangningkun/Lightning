@@ -1,13 +1,22 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Lightning.Application.Departments;
+using Lightning.Application.Users;
+using Lightning.Core.AutoMapper;
 using Lightning.EntityFramework;
+using Lightning.EntityFramework.Repositories.DepartmentRepositiories;
+using Lightning.EntityFramework.Repositories.UserRepositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Lightning.WebApi
@@ -24,39 +33,25 @@ namespace Lightning.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-            services.AddDbContext<LightningDbContext>(d => d.UseMySql(Configuration.GetConnectionString("Default")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<LightningDbContext>(options => options.UseMySql(Configuration.GetConnectionString("Default")));
+
+            ///** 服务，仓储的注入 */
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserAppService, UserAppService>();
+            services.AddScoped<IDepartmentRepositiory, DepartmentRepositiory>();
+            services.AddScoped<IDepartmentAppService, DepartmentAppService>();
+
+            //AutoMapper的配置初始化
+            AutoMapperRegister();
+
+
+            // 注册Swagger生成器，定义一个或多个Swagger文档
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("First", new Info
-                {
-                    Version = "First",
-                    Title = "Lightning接口文档",
-                    Description = "Lightning API",
-                    TermsOfService = "None",
-                    //作者信息
-                    Contact = new Contact
-                    {
-                        Name = "TangNingKun",
-                        Email = "1209229446@qq.com",
-                        Url = ""
-                    },
-                    //许可证
-                    //License = new License
-                    //{
-                    //    Name = "许可证名字",
-                    //    Url = "http://www.cnblogs.com/Scholars/"
-                    //}
-                });
-                // 下面三个方法为 Swagger JSON and UI设置xml文档注释路径
-                // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);//获取应用程序所在目录（绝对，不受工作目录影响，建议采用此方法获取路径）
-                //var xmlPath = Path.Combine(basePath, "Lightning.WebApi.xml");
-                c.IncludeXmlComments(xmlPath);
+                c.SwaggerDoc("Lightning", new Info { Title = "LightningAPI", Version = "Lightning" });
             });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,16 +67,26 @@ namespace Lightning.WebApi
                 app.UseHsts();
             }
 
-            // 配置Swagger  必须加在app.UseMvc前面
+            app.UseHttpsRedirection();
+
+            //启用中间件以将生成的Swagger作为JSON端点提供服务。
             app.UseSwagger();
-            //Swagger Core需要配置的  必须加在app.UseMvc前面
-            app.UseSwaggerUI(options =>
+
+            //启用中间件以提供swagger-ui（HTML，JS，CSS等），
+            //指定Swagger JSON端点。
+            app.UseSwaggerUI(c =>
             {
-                options.SwaggerEndpoint("/swagger/First/swagger.json", "LightningAPI");
+                c.SwaggerEndpoint("/swagger/Lightning/swagger.json", "LightningAPI");
             });
 
-            app.UseHttpsRedirection();
             app.UseMvc();
+        }
+        /// <summary>
+        /// AutoMapper的配置初始化
+        /// </summary>
+        private void AutoMapperRegister()
+        {
+            new AutoMapperStartupTask().Execute();
         }
     }
 }

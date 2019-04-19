@@ -1,7 +1,6 @@
-﻿using Lightning.Application.AppServices;
-using Lightning.Application.AppServices.dto;
-using Lightning.Application.Users.dto;
+﻿using Lightning.Application.Users.dto;
 using Lightning.Core.Dependency;
+using Lightning.Core.ResultInfo;
 using Lightning.Domain.Entities;
 using System;
 using System.Collections.Generic;

@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AppServices\**" />
+    <EmbeddedResource Remove="AppServices\**" />
+    <None Remove="AppServices\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.0.0" />
   </ItemGroup>
 

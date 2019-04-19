@@ -2743,13 +2743,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
-          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
-        }
-      },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4862,6 +4855,22 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Lightning.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AutoMapper": "8.0.0",
+          "Lightning.Core": "1.0.0",
+          "Lightning.Domain": "1.0.0",
+          "Lightning.EntityFramework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lightning.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lightning.Application.dll": {}
         }
       },
       "Lightning.Core/1.0.0": {
@@ -7697,41 +7706,6 @@
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {
-      "sha512": "IvTqpjvXEnfPjwIO92QeTWyBNPjVBllt9dws/E29erQRH3BmM46OwO4Hromu4/YtXjDPilHAij3SQP5hDyvvFQ==",
-      "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.0.2105168",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Container.props",
-        "build/Container.targets",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets",
-        "build/ToolsTarget.props",
-        "build/ToolsTarget.targets",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.0.2105168.nupkg.sha512",
-        "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Tasks.dll",
-        "tools/Newtonsoft.Json.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/utils/KillProcess.exe",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
@@ -13296,6 +13270,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Lightning.Application/1.0.0": {
+      "type": "project",
+      "path": "../Lightning.Application/Lightning.Application.csproj",
+      "msbuildProject": "../Lightning.Application/Lightning.Application.csproj"
+    },
     "Lightning.Core/1.0.0": {
       "type": "project",
       "path": "../Lightning.Code/Lightning.Core/Lightning.Core.csproj",
@@ -13314,11 +13293,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Lightning.Application >= 1.0.0",
       "Lightning.EntityFramework >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.0.2105168",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.0",
       "Swashbuckle.AspNetCore >= 4.0.1"
     ]
@@ -13353,6 +13332,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "F:\\1-A工作\\工作\\ASP.NET_CORE\\Lightning\\Lightning\\Lightning\\Lightning.Application\\Lightning.Application.csproj": {
+              "projectPath": "F:\\1-A工作\\工作\\ASP.NET_CORE\\Lightning\\Lightning\\Lightning\\Lightning.Application\\Lightning.Application.csproj"
+            },
             "F:\\1-A工作\\工作\\ASP.NET_CORE\\Lightning\\Lightning\\Lightning\\Lightning.EntityFramework\\Lightning.EntityFramework.csproj": {
               "projectPath": "F:\\1-A工作\\工作\\ASP.NET_CORE\\Lightning\\Lightning\\Lightning\\Lightning.EntityFramework\\Lightning.EntityFramework.csproj"
             }
@@ -13384,10 +13366,6 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-            "target": "Package",
-            "version": "[1.0.2105168, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

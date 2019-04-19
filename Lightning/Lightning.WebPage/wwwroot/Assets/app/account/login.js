@@ -1,6 +1,5 @@
 /* jshint esversion: 6 */
 define(['main', 'current', 'md5', 'lay!layer'], function(main, current, md5) {
-  console.log(md5('123456'));
   var layer = layui.layer;
   var module = {
     _init: function(username, password) {
@@ -26,7 +25,7 @@ define(['main', 'current', 'md5', 'lay!layer'], function(main, current, md5) {
         contentType: 'application/x-www-form-urlencoded',
         data: {
           UserName: username,
-          Password: password
+          Password: md5(password)
         },
         type: 'POST',
         async: true,

@@ -1,8 +1,7 @@
-﻿using Lightning.Application.AppServices;
-using Lightning.Application.AppServices.dto;
-using Lightning.Application.Users.dto;
+﻿using Lightning.Application.Users.dto;
 using Lightning.Core.AutoMapper;
 using Lightning.Core.Encryption;
+using Lightning.Core.ResultInfo;
 using Lightning.Domain.Entities;
 using Lightning.EntityFramework.Repositories.UserRepositories;
 using Lightning.EntityFramework.Repository;
@@ -39,11 +38,11 @@ namespace Lightning.Application.Users
                         message = "该账户名不存在!",
                         result = "Fail"
                     };
-                var password = Encryptor.Md5Hash(dto.Password.Trim()).ToString();
-                var count = await _userRepository.CountAsync(d => d.UserName == dto.UserName && d.Password == password);
+                //var password = Encryptor.Md5Hash(dto.Password.Trim()).ToString();
+                var count = await _userRepository.CountAsync(d => d.UserName == dto.UserName && d.Password == dto.Password);
                 if (count != 0)
                 {
-                    var query = await _userRepository.FirstOrDefaultAsync(d => d.UserName == dto.UserName && d.Password == password);
+                    var query = await _userRepository.FirstOrDefaultAsync(d => d.UserName == dto.UserName && d.Password == dto.Password);
                     return new MessageDto<UserDto>
                     {
                         code = 200,
@@ -77,7 +76,7 @@ namespace Lightning.Application.Users
         /// <returns></returns>
         public async Task<MessageDto> RegisterUserInfo(RegisterUserDto dto)
         {
-            dto.Password = Encryptor.Md5Hash(dto.Password.Trim());
+            //dto.Password = Encryptor.Md5Hash(dto.Password.Trim());
             var entity = new User
             {
                 UserName = dto.UserName,
