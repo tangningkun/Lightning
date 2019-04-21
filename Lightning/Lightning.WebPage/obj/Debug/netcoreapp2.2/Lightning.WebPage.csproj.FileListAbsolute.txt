@@ -39,3 +39,44 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebPage
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.csproj.CopyComplete
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.runtimeconfig.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.runtimeconfig.dev.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.Views.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.WebPage.Views.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Core.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Domain.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.EntityFramework.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Core.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\bin\Debug\netcoreapp2.2\Lightning.Domain.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.csprojAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.csproj.CoreCompileInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.RazorAssemblyInfo.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.RazorAssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.AssemblyInfoInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.TagHelpers.input.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.TagHelpers.output.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.RazorCoreGenerate.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.RazorTargetAssemblyInfo.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.RazorTargetAssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.Views.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.csproj.CopyComplete
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebPage\obj\Debug\netcoreapp2.2\Lightning.WebPage.pdb

@@ -21,3 +21,26 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.pdb
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.deps.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.runtimeconfig.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.runtimeconfig.dev.json
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.WebApi.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Application.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Core.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Domain.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.EntityFramework.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Core.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\bin\Debug\netcoreapp2.2\Lightning.Domain.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.csprojAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.csproj.CoreCompileInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.RazorAssemblyInfo.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.RazorAssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.AssemblyInfoInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.AssemblyInfo.cs
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.RazorTargetAssemblyInfo.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.csproj.CopyComplete
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.WebApi\obj\Debug\netcoreapp2.2\Lightning.WebApi.pdb

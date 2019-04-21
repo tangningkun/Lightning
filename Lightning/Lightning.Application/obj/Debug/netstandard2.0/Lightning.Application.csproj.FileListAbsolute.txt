@@ -10,7 +10,6 @@ G:\A Program Repository(程序仓库)\Lightning\Lightning.Application\obj\Debug\
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.deps.json
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.dll
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Application.pdb
-G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojResolveAssemblyReference.cache
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfo.cs
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.dll
 G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.pdb
@@ -30,3 +29,13 @@ F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Applica
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CopyComplete
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.dll
 F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Core.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Domain.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.EntityFramework.dll
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Core.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.Domain.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\bin\Debug\netstandard2.0\Lightning.EntityFramework.pdb
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csprojAssemblyReference.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CoreCompileInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.AssemblyInfoInputs.cache
+G:\A Program Repository(程序仓库)\Lightning\Lightning\Lightning.Application\obj\Debug\netstandard2.0\Lightning.Application.csproj.CopyComplete

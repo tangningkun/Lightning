@@ -1,6 +1,10 @@
 ﻿@using Lightning.WebPage.Application;
 @inject AppConfigurtaionServices appConfigurtaionServices
 
+@{
+    //SetAntiForgeryCookie();
+    var version = appConfigurtaionServices.AppConfigurtaionValue("Appsettings:version");
+}
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -35,6 +39,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <link rel="stylesheet"
               href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     </environment>
+    <script type="text/javascript">
+        //This is used to get the application's root path from javascript. It's useful if you're running application in a virtual directory under IIS.
+        window.webapi = '@appConfigurtaionServices.AppConfigurtaionValue("Appsettings:webapi")';
+        console.log('webapi', webapi);
+        var islogin = true;
+        var _version = @version;
+        var _jsPath = '@(ViewBag.JsPath ?? string.Empty)';
+    </script>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -388,6 +400,10 @@ desired effect
         <script src="~/Assets/node_modules/admin-lte/dist/js/adminlte.min.js"></script>
         <!-- Optionally, you can add Slimscroll and FastClick plugins. Both of these plugins are recommended to enhance the user experience. 
               （可选）您可以添加Slimscroll和FastClick插件。建议使用这两个插件来增强用户体验。-->
+
+        <script src="~/Assets/lib/require.js" type="text/javascript"></script>
+        <script src="~/Assets/lib/config.js" type="text/javascript"></script>
+        <script src="~/Assets/layui/layui.js"></script>
     </environment>
     @RenderSection("Scripts", required: false)
 </body>
