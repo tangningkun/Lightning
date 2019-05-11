@@ -56,8 +56,22 @@ namespace Lightning.WebPage
             services.AddScoped<IUserAppService, UserAppService>();
             services.AddScoped<IDepartmentRepositiory, DepartmentRepositiory>();
             services.AddScoped<IDepartmentAppService, DepartmentAppService>();
+
+            /** 跨域配置 */
+            services.AddCors(options =>
+            {
+                options.AddPolicy("LightningAny", builder =>
+                {
+                    builder.AllowAnyOrigin() //允许任何来源的主机访问
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials();//指定处理cookie
+
+                });
+            });
+
             services.AddMvc();
-            //Session服务
+            /** Session服务 */
             services.AddSession();
 
             /** AutoMapper的配置初始化 */
@@ -78,16 +92,19 @@ namespace Lightning.WebPage
                 app.UseHsts();
             }
 
-            //Session服务
+            /** Session服务 */
             app.UseSession();
 
-            //使用静态文件
+            /** 使用静态文件 */
             app.UseStaticFiles();
 
             app.UseStaticFiles(new StaticFileOptions()
             {
                 FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
             });
+
+            /** 跨域配置 */
+            app.UseCors("LightningAny");
 
             app.UseMvc(routes =>
             {

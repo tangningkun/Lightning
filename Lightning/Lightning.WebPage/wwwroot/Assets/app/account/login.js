@@ -1,5 +1,5 @@
 /* jshint esversion: 6 */
-define(['main', 'current', 'md5', 'lay!layer'], function(main, current, md5) {
+define(['main', 'current', 'md5', 'jwt', 'lay!layer'], function(main, current, md5, jwt) {
   var layer = layui.layer;
   var module = {
     _init: function(username, password) {
@@ -30,9 +30,28 @@ define(['main', 'current', 'md5', 'lay!layer'], function(main, current, md5) {
         type: 'POST',
         async: true,
         success: function(result) {
-          console.log('result', result);
           if (result.code == 200) {
-            location.href = '/Home/Index'; //跳转到首页
+            let token_url = window.webapi + 'Lightning/GetJsonWebToken';
+            current
+              ._HttpAjax(
+                token_url,
+                'POST',
+                {
+                  UserName: username,
+                  Password: md5(password)
+                },
+                false
+              )
+              .then(res => {
+                debugger;
+                console.log(res);
+                //npm install jsonwebtoken
+                let token = jwt(res);
+                location.href = '/Home/Index'; //跳转到首页
+              })
+              .catch(err => {
+                console.log('token', err);
+              });
           } else if (result.code != 202) {
             layer.msg(result.message, { icon: 2 });
           } else {

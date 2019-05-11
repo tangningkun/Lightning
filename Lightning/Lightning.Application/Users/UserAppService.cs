@@ -29,7 +29,6 @@ namespace Lightning.Application.Users
         {
             try
             {
-                var count1 = _userRepository.Count();
                 var checkCount = await _userRepository.CountAsync(d => d.UserName == dto.UserName);
                 if (checkCount == 0)
                     return new MessageDto<UserDto>

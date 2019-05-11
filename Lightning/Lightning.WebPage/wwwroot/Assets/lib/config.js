@@ -28,7 +28,8 @@ requirejs.config({
     es6: 'node_modules/requirejs-babel/es6',
     babel: 'node_modules/requirejs-babel/babel-5.8.34.min',
     polyfill: 'node_modules/babel-polyfill/dist/polyfill.min',
-    md5: 'node_modules/blueimp-md5/js/md5.min'
+    md5: 'node_modules/blueimp-md5/js/md5.min',
+    jwt: 'node_modules/jsonwebtoken/index'
   },
   urlArgs: 'v=' + timeStamp
 });
