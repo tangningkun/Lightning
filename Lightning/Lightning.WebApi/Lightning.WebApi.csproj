@@ -5,6 +5,15 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>F:\1-A工作\工作\ASP.NET_CORE\Lightning\Lightning\Lightning\Lightning.WebApi\Lightning.WebApi.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AuthHelper\Policys\PermissionHandler.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
@@ -15,7 +24,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lightning.Application\Lightning.Application.csproj" />
+    <ProjectReference Include="..\Lightning.Code\Lightning.Core\Lightning.Core.csproj" />
     <ProjectReference Include="..\Lightning.EntityFramework\Lightning.EntityFramework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

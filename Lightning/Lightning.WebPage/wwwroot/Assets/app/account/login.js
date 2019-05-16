@@ -1,5 +1,5 @@
 /* jshint esversion: 6 */
-define(['main', 'current', 'md5', 'jwt', 'lay!layer'], function(main, current, md5, jwt) {
+define(['main', 'current', 'md5', 'dayjs', 'lay!layer'], function(main, current, md5, dayjs) {
   var layer = layui.layer;
   var module = {
     _init: function(username, password) {
@@ -20,45 +20,38 @@ define(['main', 'current', 'md5', 'jwt', 'lay!layer'], function(main, current, m
       return false;
     },
     _checklogin: function(username, password) {
-      $.ajax({
-        url: '/Account/CheckLogin',
-        contentType: 'application/x-www-form-urlencoded',
-        data: {
-          UserName: username,
-          Password: md5(password)
-        },
-        type: 'POST',
-        async: true,
-        success: function(result) {
+      let data = {
+        UserName: username,
+        Password: md5(password)
+      };
+      current
+        ._HttpAjax('/Account/CheckLogin', 'POST', data)
+        .then(result => {
           if (result.code == 200) {
-            let token_url = window.webapi + 'Lightning/GetJsonWebToken';
-            current
-              ._HttpAjax(
-                token_url,
-                'POST',
-                {
-                  UserName: username,
-                  Password: md5(password)
-                },
-                false
-              )
-              .then(res => {
-                debugger;
-                console.log(res);
-                //npm install jsonwebtoken
-                let token = jwt(res);
-                location.href = '/Home/Index'; //跳转到首页
-              })
-              .catch(err => {
-                console.log('token', err);
-              });
+            module._getToken(data);
           } else if (result.code != 202) {
             layer.msg(result.message, { icon: 2 });
           } else {
             layer.msg('系统错误,请重新登录！', { icon: 2 });
           }
-        }
-      });
+        })
+        .catch(e => {
+          layer.msg('系统故障！', { icon: 2 });
+        });
+    },
+    _getToken: function(data) {
+      let token_url = window.webapi + 'Lightning/GetJsonWebToken';
+      current
+        ._HttpGetToken(token_url, 'POST', JSON.stringify(data))
+        .then(msg => {
+          if (msg.code == '200') {
+            document.cookie = 'token=' + msg.token + ';expires=' + new Date(Date.parse(new Date()) + 30 * 60 * 1000).toUTCString();
+            location.href = '/Home/Index'; //跳转到首页
+          }
+        })
+        .catch(e => {
+          //module._getToken(data);
+        });
     }
   };
   $('#btn-login').click(function() {

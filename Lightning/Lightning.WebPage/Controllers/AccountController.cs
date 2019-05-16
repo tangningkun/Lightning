@@ -6,10 +6,12 @@ using Lightning.Application.Users;
 using Lightning.Application.Users.dto;
 using Lightning.Core.AutoMapper;
 using Lightning.WebPage.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lightning.WebPage.Controllers
 {
+    //[EnableCors("LightningAny")]
     public class AccountController : Controller
     {
         /// <summary>

@@ -8,9 +8,11 @@ using Lightning.WebPage.Models;
 using Lightning.WebPage.Application;
 using Lightning.Application.Users;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Cors;
 
 namespace Lightning.WebPage.Controllers
 {
+    //[EnableCors("LightningAny")]
     public class HomeController : Controller
     {
         private readonly IUserAppService _userAppService;

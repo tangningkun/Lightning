@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lightning.Core.JwtToken
+namespace Lightning.Core.Token
 {
-    class JwtTokenUtil
+    public class JwtTokenUtil
     {
     }
 }

@@ -1,12 +1,14 @@
 ﻿/* jshint esversion: 6 */
 define(['main', 'current'], function(main, current) {
   console.log('window.webapi', window.webapi);
+  let token = 'Bearer' + ' ' + current._getCookie('token');
+  console.log('token', token);
   let url = window.webapi + 'Lightning/GetAllDepartment';
-  current._HttpAjax(url, 'POST', {}, false).then(result => {
+  /* current._HttpAjax(url, 'POST', {}, false).then(result => {
     console.log('result', result);
-  });
+  }); */
 
-  $.ajax({
+  /* $.ajax({
     url: window.webapi + 'Lightning/GetAllDepartment',
     contentType: 'application/x-www-form-urlencoded',
     data: {},
@@ -15,22 +17,21 @@ define(['main', 'current'], function(main, current) {
     success: function(result) {
       console.log('result', result);
     }
-  });
+  }); */
 
   $.ajax({
-    url: window.webapi + 'Lightning/Get',
-    contentType: 'application/x-www-form-urlencoded',
+    url: window.webapi + 'Lightning/GetAll',
+    type: 'POST',
     beforeSend: function(request) {
-      request.setRequestHeader(
-        'Authorization',
-        'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE1NTc0Njk4MzIsImlzcyI6IlRhbmdOaW5nS3VuSXNzdWVyIiwiYXVkIjoiVGFuZ05pbmdLdW5BdWRpZW5jZSJ9.Bcj-4IYEmrs8oIo7OwM64CPXnSGXGxaufsb9PJMPaNg'
-      );
+      request.setRequestHeader('authorization', token);
     },
-    data: { id: 1 },
-    type: 'GET',
+    contentType: 'application/json',
     async: false,
     success: function(result) {
       console.log('result', result);
+    },
+    error(e) {
+      console.log(e);
     }
   });
   //获取用户Session
